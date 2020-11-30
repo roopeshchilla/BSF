@@ -1,0 +1,5 @@
+
+{
+    "requestsize":  "Comments with // or /**/ are NEVER used in a JSON file!!!",
+    "serverport": "9000"
+}

@@ -1,0 +1,81 @@
+{
+	"openapi": "3.0.0",
+	"info": {
+		"description": "API Framework",
+		"license": {
+			"name": "MIT"
+		},
+		"title": "Gore API Framework Application",
+		"version": "0.0.1"
+	},
+	"paths": {
+		"/health": {
+			"get": {
+				"operationId": "HealthServerIsUp",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"text/html": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"description": ""
+			}
+		},
+		"/goremutual/ca/mto": {
+			"get": {
+				"operationId": "MtoGetMtoData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"text/html": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"description": ""
+			}
+		},
+		"/goremutual/ca/vinvalidation": {
+			"get": {
+				"operationId": "VinValidationGetVinData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"text/html": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"description": ""
+			}
+		}
+	},
+	"components": {
+		"securitySchemes": {
+			"default": {
+				"type": "apiKey",
+				"in": "header",
+				"name": "Authorization"
+			},
+			"secondAuthenticator": {
+				"type": "apiKey",
+				"in": "header",
+				"name": "Authorization"
+			}
+		}
+	}
+}
